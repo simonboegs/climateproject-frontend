@@ -1,0 +1,149 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="home">
+            <h1>Climate change affects <span>YOU.</span></h1> 
+            <button onclick="getLocation()">See for yourself.</button>
+        </div>
+    </div>
+    <div class="otherContainer" id="otherContainer">
+        <div class="categoriesContainer">
+            <div class="categoryContainer hurricane" id="hurricane">
+                <h3 class="categoryTitle">Hurricanes</h3>
+            </div>
+            <div class="categoryContainer fire" id="fire">
+                <h3 class="categoryTitle">Fire</h3>
+            </div>
+            <!-- <div class="categoryContainer drought" id="drought"> 
+                <h3 class="categoryTitle">Drought</h3>
+            </div> -->
+            <div class="categoryContainer temperature" id="temperature">
+                <h3 class="categoryTitle">Temperature</h3>
+            </div>
+            <div class="categoryContainer flood" id="flood">
+                <h3 class="categoryTitle">Flood</h3>
+            </div>
+        </div>
+        <a id="anchor"></a>
+        <div class="info hurricane" id="hurricaneInfo">
+            <div class="hurricaneTop">
+                Hurricanes
+            </div>
+            <div class="hurricaneMain">
+                <div class="entry">
+                    <span class="entryYear">2020</span>
+                    On average, <span class="orangeNum" id="hurrHistorical"></span> category 4 - 5 hurricanes make landfall in your
+                    state each year.
+                </div>
+                <div class="entry">
+                    <span class="entryYear">2050</span>
+                    On average, <span class="orangeNum" id="hurrFuture"></span> category 4 - 5 hurricanes make landfall in your
+                    state each year: an increase of <span class="orangeNum">110%</span>
+                </div>
+                <div class="hurricaneLearn">
+                    <a href="https://www.iucn.org/resources/issues-briefs/ocean-warming">Learn more here</a>
+                </div>
+            </div>
+        </div>
+        <div class="info temperature" id="temperatureInfo">
+            <div class="hurricaneTop">
+                Temperature
+            </div>
+            <div class="hurricaneMain">
+                <div class="entry">
+                    <span class="entryYear">1997</span>
+                    <span class="orangeNum" id="cat4and5">2300</span> deaths anually due to extreme heat.
+                </div>
+                <div class="entry">
+                    <span class="entryYear">2020</span>
+                    Your city can expect <span class="orangeNum" id="tempHistorical"></span> days above 90&deg;
+                </div>
+                <div class="entry">
+                    <span class="entryYear">2050</span>
+                    Your city can expect <span class="orangeNum" id="tempFuture"></span> days above 90&deg;
+                </div>
+                <div class="entry">
+                    <span class="entryYear">2050</span>
+                    Global temperatures are expected to increase <span class="orangeNum" >3&deg;</span>
+                </div>
+                <div class="entry">
+                    <span class="entryYear">2050</span>
+                    <span class="redNum">7,700-10,300</span> deaths annually
+                </div>
+                <div class="entry">
+                    <span class="entryYear">2090</span>
+                    <span class="redNum">10,400-26,000</span> deaths annually
+                </div>
+                <div class="hurricaneLearn">
+                    <a href="https://www.iucn.org/resources/issues-briefs/ocean-warming">Learn more here</a>
+                </div>
+            </div>
+        </div>
+        <div class="info flood" id="floodInfo">
+            <div class="hurricaneTop">Flooding</div>
+            <div class="hurricaneMain">
+                <div class="entry">
+                    <span class="entryYear">2020</span>
+                    You live in a county in which <span class="orangeNum" id="floodRisk2020"></span> of property is at substantial risk of flooding.
+                </div>
+                <div class="entry">
+                    <span class="orangeNum">40%</span> of all US properties have substantial flood risk.
+                </div>
+                <div class="floodEntry">
+                    <div class="floodEntryTop">In your county, there are</div>
+                    <div class="floodEntryBottom"><span id="floodRiskTotal2020">160,000</span> Properties at Risk</div>
+                </div>
+                <div class="entry">
+                    <span class="entryYear">2050</span>
+                    You live in a county in which <span class="orangeNum" id="floodRisk2050"></span> of property WILL BE at substantial risk of flooding.
+                </div>
+                <div class="entry">
+                    <span class="orangeNum">69%</span> of all US properties WILL HAVE substantial flood risk.
+                </div>
+                <div class="floodEntry">
+                    <div class="floodEntryTop">In your county, there WILL BE</div>
+                    <div class="floodEntryBottom"><span id="floodRiskTotal2050">200,000</span> Properties at Risk</div>
+                </div>
+                <div class="entry">
+                    <a href="https://anthropocenealliance.org/higherground">Protect yourself from flood damage.</a>
+                </div>
+            </div>
+        </div>
+        <div class="info fire" id="fireInfo">
+            <div class="hurricaneTop">Fires</div>
+            <div class="hurricaneMain">
+                <div class="entry">
+                    <span class="entryYear">2020</span>
+                    You live in a state in which <span class="orangeNum" id="totalFire"></span> wildfires burned in the last 10 years.
+                </div>
+                <div class="floodEntry">
+                    <div class="floodEntryTop">In the entire US 57,000 wildfires burned THIS YEAR.</div>
+                    <div class="floodEntryBottom"><span id="atRiskPropertiesFuture">10,300,000</span> acres</div>
+                </div>
+                <div class="entry">
+                    <span class="entryYear">2050</span>
+                    Conservative predictions estimate the average area burned yearly in the western US will be 
+                    <span class="orangeNum">5,400,000 acres.</span>
+                </div>
+                <div class="entry">
+                    That is <span class="orangeNum">7 Rhode Islands every year.</span>
+                </div>
+                <div class="entry">
+                    <span class="entryYear">2100</span>There will be <span class="orangeNum">40,000</span> smoke related deaths per year in the US alone.
+                </div>
+                <div class="entry">
+                    <div class="graphWrapper">
+                        <img src="https://cdn.discordapp.com/attachments/354329237022572545/800514443192303616/unknown.png" width=300>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
