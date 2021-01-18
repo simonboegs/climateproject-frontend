@@ -39,6 +39,7 @@ async function getResults(position) {
         document.getElementById("hurricane").style.display = "none";
     }
     else {
+        document.getElementById("hurricane").style.display = "flex";
         document.getElementById("hurrHistorical").innerHTML = results.hurricane.current;
         document.getElementById("hurrFuture").innerHTML = results.hurricane.future;
     }
@@ -46,6 +47,7 @@ async function getResults(position) {
         document.getElementById("flood").style.display = "none";
     }
     else {
+        document.getElementById("flood").style.display = "flex";
         document.getElementById("floodRisk2020").innerHTML = results.flood.risk2020 + "%";
         document.getElementById("floodRisk2050").innerHTML = results.flood.risk2050 + "%";
         document.getElementById("floodRiskTotal2020").innerHTML = results.flood.totalRisk2020;
@@ -55,8 +57,10 @@ async function getResults(position) {
         document.getElementById("fire").style.display = "none";
     }
     else {
+        document.getElementById("fire").style.display = "flex";
         document.getElementById("totalFire").innerHTML = results.fire;
     }
+    document.getElementById("temperature").style.display = "flex";
     document.getElementById("tempHistorical").innerHTML = results.temperature.historical;
     document.getElementById("tempFuture").innerHTML = results.temperature.future;
 }

@@ -6,7 +6,36 @@
 .container {
     height: 100vh;
     width: 100%;
+    background-color: #030d26;
     /* display: none; */
+}
+
+.home {
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    color: white;
+}
+
+.home span {
+    color: orange;
+}
+
+.home button {
+    margin-top: 200px;
+    font-size: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: 3px solid white;
+    background-color: none;
+    background: none;
+    padding: 10px;
+    color: white;
+}
+
+.home button:hover {
+    color: lightblue;
 }
 
 .otherContainer {
@@ -28,7 +57,6 @@
     height: 100%;
     width: 25%;
     background-color: #030d26;
-    display: flex;
     justify-content: center;
     font-size: 30px;
 }
@@ -52,10 +80,6 @@
 .categoryContainer.fire:hover {
     background-image: url("https://cdn.discordapp.com/attachments/354329237022572545/800440529602478131/Wildfire.png");
     /* -webkit-animation: fadeIn 2s; */
-}
-
-.categoryContainer.temperature:hover {
-    background-color: black;
 }
 
 .categoryTitle {
