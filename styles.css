@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    /* display: none; */
+}
+
+.otherContainer {
+    overflow: auto;
+    width: 100%;
+    display: none;
+}
+
+.categoriesContainer {
+    height: 100vh;
+    width: 100%;
+    margin: none;
+    justify-content: space-between;
+    display: flex;
+    color: white;
+}
+
+.categoryContainer {
+    height: 100%;
+    width: 25%;
+    background-color: #030d26;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.categoryContainer.hurricane:hover {
+    background-image: url("https://cdn.discordapp.com/attachments/354329237022572545/800442197946138654/bigger_huricane.jpg");
+    /* -webkit-animation: fadeIn 2s; */
+}
+.categoryContainer.drought:hover {
+    background-image: url("https://cdn.discordapp.com/attachments/354329237022572545/800442439319420948/droughtmovielike.jpg");
+    /* -webkit-animation: fadeIn 2s; */
+}
+.categoryContainer.temperature:hover {
+    background-image: url("https://cdn.discordapp.com/attachments/354329237022572545/800443225495437362/heatwaveocean.jpg");
+    /* -webkit-animation: fadeIn 2s; */
+}
+.categoryContainer.flood:hover {
+    background-image: url("https://cdn.discordapp.com/attachments/354329237022572545/800441278324015114/floodedtown.jpg");
+    /* -webkit-animation: fadeIn 2s; */
+}
+.categoryContainer.fire:hover {
+    background-image: url("https://cdn.discordapp.com/attachments/354329237022572545/800440529602478131/Wildfire.png");
+    /* -webkit-animation: fadeIn 2s; */
+}
+
+.categoryContainer.temperature:hover {
+    background-color: black;
+}
+
+.categoryTitle {
+    margin: auto;
+}
+
+.info {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    color: white;
+}
+
+.info.hurricane {
+    background-image: url("https://cdn.discordapp.com/attachments/572270596801429516/800494950625443870/Bigtreelean.jpg");
+}
+.info.temperature {
+    background-image: url("https://cdn.discordapp.com/attachments/572270596801429516/800502300011266089/LaHeatwave.jpeg");
+}
+
+.info.flood {
+    background-image: url("https://cdn.discordapp.com/attachments/354329237022572545/800511945085288519/neworleansflood.jpg");
+}
+
+.info.fire {
+    display: block;
+    background-color: black;
+}
+
+.hurricaneTop {
+    text-align: right;
+    padding: 30px;
+    font-size: 40px;
+    color: orange;
+}
+
+.hurricaneMain {
+    margin: auto;
+    height: 600px;
+    overflow: auto;
+    width: 1200px;
+}
+
+.hurricaneMain::-webkit-scrollbar {
+    display: none;
+}
+
+.entry {
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.entryYear {
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.orangeNum {
+    font-weight: bold;
+    color: orange;
+    font-size: 50px;
+}
+
+.redNum {
+    font-weight: bold;
+    color: lightcoral;
+    font-size: 50px;
+}
+
+.hurricaneLearn {
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 200px;
+    color: white;
+}
+
+.floodEntry {
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+
+.floodEntryTop {
+    width: 100%;
+    font-size: 20px;
+}
+.floodEntryBottom {
+    font-size: 60px;
+    color: orange;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
